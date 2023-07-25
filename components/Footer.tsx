@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { footerLinks } from "@/constants";
 import Link from "next/link";
+import { getURL } from "@/utils";
 
 export const Footer = (): React.JSX.Element => {
   return (
@@ -8,7 +9,7 @@ export const Footer = (): React.JSX.Element => {
       <div className="flex max-md:flex-col flex-wrap justify-between gap-5 sm:px-16 px-6 py-10">
         <div className="flex flex-col justify-start items-start gap-6">
           <Image
-            src="/logo.svg"
+            src={getURL("logo.svg")}
             alt="logo"
             width={118}
             height={18}
