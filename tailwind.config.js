@@ -26,7 +26,7 @@ module.exports = {
       },
       backgroundImage: {
         'pattern': "url('/pattern.png')",
-        'hero-bg': "url('/hero-bg.png')"
+        'hero-bg': "url('https://github.com/gavrylenkoIvan/images/blob/master/hero-bg.png?raw=true')"
       }
     },
   },
