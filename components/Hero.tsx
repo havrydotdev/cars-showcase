@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import { CustomButton } from "./CustomButton";
-import { getURL } from "@/utils";
 
 export const Hero = (): React.JSX.Element => {
   const handleScroll = () => {};
