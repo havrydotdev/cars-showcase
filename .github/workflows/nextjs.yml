@@ -24,6 +24,10 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
+env:
+  PROD_MODE: true
+  BASE_PATH: "./"
+
 jobs:
   # Build job
   build:

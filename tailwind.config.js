@@ -1,4 +1,9 @@
 /** @type {import('tailwindcss').Config} */
+const deploy = process.env.PROD_MODE
+const prefix = "/"
+if (deploy) {
+  prefix = "/cars-showcase/"
+}
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -25,8 +30,8 @@ module.exports = {
         grey: "#747A88",
       },
       backgroundImage: {
-        'pattern': "url('/cars-showcase/pattern.png')",
-        'hero-bg': "url('/cars-showcase/hero-bg.png')"
+        'pattern': `url('${prefix}pattern.png')`,
+        'hero-bg': `url('${prefix}hero-bg.png')`
       }
     },
   },
