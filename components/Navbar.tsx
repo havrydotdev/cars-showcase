@@ -10,7 +10,7 @@ export const Navbar = (): React.JSX.Element => {
       <nav className="max-w-[1440px] mx-auto flex justify-between items-center sm:px-16 px-6 py-4">
         <Link href="/" className="flex justify-center items-center">
           <Image
-            src={getURL("logo.svg")}
+            src={"/logo.svg"}
             alt="Car Hub Logo"
             width={118}
             height={18}
