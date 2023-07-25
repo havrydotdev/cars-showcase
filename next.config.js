@@ -3,7 +3,6 @@
 const nextConfig = {
     output: 'export',
     basePath: process.env.BASE_PATH,
-    trailingSlash: process.env.TRAILING_SLASH,
     images: {
         unoptimized: true,
         remotePatterns: [

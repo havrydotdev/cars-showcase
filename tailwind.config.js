@@ -4,6 +4,7 @@ let prefix = "/"
 if (deploy) {
   prefix = "/cars-showcase/"
 }
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
