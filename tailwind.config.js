@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const deploy = process.env.PROD_MODE
-const prefix = "/"
+let prefix = "/"
 if (deploy) {
   prefix = "/cars-showcase/"
 }
