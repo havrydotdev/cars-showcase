@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const repo = "cars_showcase";
+const repo = "cars-showcase";
 const assetPrefix = `/${repo}/`;
 const basePath = `/${repo}`;
 
