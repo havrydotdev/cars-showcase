@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { footerLinks } from "@/constants";
 import Link from "next/link";
-import { getURL } from "@/utils";
 
 export const Footer = (): React.JSX.Element => {
   return (
