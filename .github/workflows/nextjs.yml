@@ -27,7 +27,7 @@ concurrency:
 env:
   PROD_MODE: true
   BASE_PATH: "./"
-
+  RAPID_API_KEY: ${{ secrets.RAPID_API_KEY }}
 jobs:
   # Build job
   build:
