@@ -27,15 +27,15 @@ concurrency:
 env:
   PROD_MODE: true
   BASE_PATH: "./"
-  
+
 jobs:
   # Build job
   build:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    env: 
-      RAPID_API_KEY: ${{ secrets.RAPID_API_KEY }}
+    env:
+      NEXT_PUBLIC_RAPID_API_KEY: ${{ secrets.NEXT_PUBLIC_RAPID_API_KEY }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

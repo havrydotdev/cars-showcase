@@ -11,6 +11,11 @@ const nextConfig = {
               hostname: 'github.com',
               port: '',
             },
+            {
+              protocol: 'https',
+              hostname: 'cdn.imagin.studio',
+              port: ''
+            }
           ],
     },
 }

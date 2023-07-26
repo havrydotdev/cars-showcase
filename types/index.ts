@@ -3,17 +3,26 @@ import { MouseEventHandler } from "react";
 export interface CustomButtonProps {
   title: string;
   containerStyles?: string;
+  textStyles?: string;
+  rightIcon?: string;
+  isDisabled?: boolean;
   handleClick?: MouseEventHandler<HTMLButtonElement>;
   btnType?: "button" | "submit";
 }
 
-export interface CustomFilterProps {
-  title: string;
+export interface CarDetailsProps {
+  isOpen: boolean;
+  closeModal: () => void;
+  car: Car;
 }
 
 export interface SearchManufacturerProps {
   manufacturer: string;
   setManufacturer: (manufacturer: string) => void;
+}
+
+export interface CustomFilterProps {
+  title: string;
 }
 
 export interface CarProps {
@@ -33,8 +42,4 @@ export interface Car {
   model: string;
   transmission: string;
   year: number;
-}
-
-export interface CustomFilterProps {
-  title: string;
 }
